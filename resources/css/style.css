@@ -1,0 +1,155 @@
+body {
+  font-family: "merriweather-regular";
+  line-height: 1.2rem;
+  text-align: center;
+}
+
+main p {
+  font-family: merriweather-italic;
+  font-size: .5rem;
+  padding: 0 1rem;
+}
+
+figure {
+  padding: 1.5rem 0;
+}
+
+img {
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-family: merriweather-italic;
+  font-size: .625rem;
+}
+
+section:nth-child(2n) {
+  background-color: rgb(200, 200, 200);
+}
+
+section:last-child {
+  padding-bottom: 2rem;
+}
+
+main > .container {
+  font-size: .5rem;
+}
+
+.bold {
+  font-family: merriweatherbold;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  height: 3.5rem;
+}
+
+header .extra-link {
+  display: none;
+}
+
+header .mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .75rem;
+  padding: 0 .75rem;
+}
+
+header .mobile-nav img {
+  width: 16%;
+}
+
+header .mobile-nav ul {
+  display: flex;
+}
+
+header .mobile-nav a {
+  margin-left: 1rem;
+}
+
+header .mobile-nav a:active {
+  color: #1A6757;
+}
+
+main .hero {
+  background:
+    /* top, transparent white, faked with gradient */
+    linear-gradient(rgba(255, 255, 255, 86%),
+      rgba(255, 255, 255, 86%)),
+    /* bottom, image */
+    url("../images/backgrounds/systems-and-organization.png");
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  color: #1A6757;
+}
+
+main .hero img {
+  border-radius: 50%;
+  width: 40%;
+  position: relative;
+}
+
+main .container:not(.hero) {
+  padding-top: 2rem;
+}
+
+.hero h1 {
+  padding-bottom: 1rem;
+}
+
+.hero p{
+  padding: 0 1.5rem;
+  font-size: .75rem;
+}
+
+.prosof-used, .skill{
+  text-align: left;
+}
+
+.skill {
+  padding-top: .5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  font-family: merriweather-regular;
+  font-size: .75rem;
+  background-color: black;
+  color: white;
+  padding: .75rem;
+}
+
+footer p {
+  padding: .75rem;
+  font-family: merriweather-italic;
+  text-align: left;
+}
+
+footer a {
+  color: blue;
+  font-family: merriweather-regular;
+}
+
+footer .credit {
+  font-size: 0.625rem;
+}
