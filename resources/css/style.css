@@ -4,7 +4,8 @@ body {
   text-align: center;
 }
 
-figcaption::before, figcaption::after {
+figcaption::before,
+figcaption::after {
   content: " -- ";
   color: #1A6757;
 }
@@ -20,10 +21,9 @@ h1 {
   font-weight: bold;
 }
 
-h2:not("pricing.html"){
-  font-size: 1rem;
-  background-color: #1A6757;
-  color: white;
+h2 {
+  line-height: 1.75rem;
+  font-size: 1.25rem;
 }
 
 h3 {
@@ -49,6 +49,8 @@ header {
   background-color: black;
   height: 4.5rem;
   padding: .25rem;
+  position: sticky;
+  top: 0;
 }
 
 header .extra-link {
@@ -80,7 +82,7 @@ main .hero {
     linear-gradient(rgba(255, 255, 255, 86%),
       rgba(255, 255, 255, 86%)),
     /* bottom, image */
-    url("../images/backgrounds/systems-and-organization.png");
+    url("../images/backgrounds-and-elements/systems-and-organization.png");
   background-size: cover;
   background-position: center;
   height: 24rem;
@@ -145,7 +147,9 @@ figcaption {
   margin: 0 auto;
 }
 
-.prosof-used, .skill, footer {
+.prosof-used,
+.skill,
+footer {
   text-align: left;
   padding: 0 1rem;
 }
@@ -182,14 +186,46 @@ footer .credit {
 }
 
 
-/* pricing specific */
+/* pricing.html specific */
 
-.price-grid {
+.price-grid, .special-price-grid{
   font-size: .50rem;
+  width: 90%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: auto;
 }
 
-.card__description {
-  border: solid 2px limegreen;
+.card {
+  border: solid lightgray .10rem;
+  border-radius: .35rem;
+  border-left-color: #1A6757;
+  border-left-width: .25rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.card h2 {
+  margin-bottom: 1.50rem;
+}
+
+.card li {
+  margin-bottom: .75rem;
+}
+
+.card .service::before {
+  content: "\25C6";
+  color: #1A6757;;
+  font-size: 1rem;
+  margin-right: .25rem;
+}
+
+.card .marketing-exp {
+  font-size: .55rem;
+  font-family: merriweather-regular;
+  margin-bottom: 1.50rem;
+}
+
+.special-price-grid .card .service::before {
+
 }
