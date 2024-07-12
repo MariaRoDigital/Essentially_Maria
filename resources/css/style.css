@@ -51,6 +51,7 @@ header {
   padding: .25rem;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 header .extra-link {
@@ -60,7 +61,7 @@ header .extra-link {
 header .mobile-nav {
   display: flex;
   align-items: center;
-  font-size: .88rem;
+  font-size: .80rem;
 }
 
 header .mobile-nav ul {
@@ -72,8 +73,20 @@ header .mobile-nav a {
   margin-left: 1rem;
 }
 
+header .mobile-nav .cta {
+  border: solid .10rem;
+  border-radius: .14rem;
+  padding: .20rem;
+}
+
 header .mobile-nav a:active {
   color: #1A6757;
+}
+
+main .pricing-page {
+  position: relative;
+  top: 2rem;
+  z-index: 1;
 }
 
 main .hero {
@@ -107,7 +120,7 @@ main .hero h1 {
 
 main .hero p {
   font-size: .8rem;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
 main .web-featured {
@@ -118,11 +131,7 @@ main .da-featured {
   background-color: #1a675827;
 }
 
-main {
-  background-color: #1a67580f;
-}
-
-main .container:not(.hero) {
+main .portfolio-page .container:not(.hero) {
   padding: 2rem 0;
 }
 
@@ -196,6 +205,10 @@ footer .credit {
   margin: auto;
 }
 
+.pricing-page h1, .regular {
+  margin-bottom: 1.5rem;
+}
+
 .card {
   border: solid lightgray .10rem;
   border-radius: .35rem;
@@ -220,12 +233,18 @@ footer .credit {
   margin-right: .25rem;
 }
 
-.card .marketing-exp {
-  font-size: .55rem;
-  font-family: merriweather-regular;
-  margin-bottom: 1.50rem;
+.card .service {
+  font-size: 1rem;
+  margin-bottom: .25rem;
 }
 
-.special-price-grid .card .service::before {
+.card .card-extra {
+  font-size: .55rem;
+  font-family: merriweather-italic;
+  margin-bottom: 1.50rem;
+  line-height: .8rem;
+}
 
+.pricing-page .special {
+  margin-bottom: 2rem;
 }
