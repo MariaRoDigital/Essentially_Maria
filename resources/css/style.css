@@ -54,6 +54,10 @@ header {
   z-index: 2;
 }
 
+header .logo {
+  max-width: 4rem;
+}
+
 header .extra-link {
   display: none;
 }
