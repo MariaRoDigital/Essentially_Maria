@@ -209,7 +209,11 @@ footer .credit {
   margin: auto;
 }
 
-.pricing-page h1, .regular {
+.base-price, .special-base {
+  margin: 1.5rem 0;
+}
+
+.regular {
   margin-bottom: 1.5rem;
 }
 
@@ -236,6 +240,13 @@ footer .credit {
   font-size: 1rem;
   margin-right: .25rem;
 }
+
+.special .service::before {
+  content: "\2605";
+  color: orange;
+}
+
+.special .service::before 
 
 .card .service {
   font-size: 1rem;
