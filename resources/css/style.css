@@ -35,6 +35,10 @@ h3 {
   font-family: merriweatherbold;
 }
 
+.dotted {
+  text-decoration: underline dotted black .10rem;
+}
+
 .sixty {
   width: 60%;
 }
@@ -209,8 +213,16 @@ footer .credit {
   margin: auto;
 }
 
-.base-price, .special-base {
-  margin: 1.5rem 0;
+.price-and-min {
+  margin: 2rem 0;
+}
+
+.special-base, .base-price {
+  font-size: 1rem;
+}
+
+.req-time {
+  margin-top: .2rem;
 }
 
 .regular {
@@ -241,12 +253,14 @@ footer .credit {
   margin-right: .25rem;
 }
 
+.special .card {
+  border-left-color: orange;
+}
+
 .special .service::before {
   content: "\2605";
   color: orange;
 }
-
-.special .service::before 
 
 .card .service {
   font-size: 1rem;
