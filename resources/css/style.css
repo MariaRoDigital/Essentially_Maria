@@ -280,7 +280,7 @@ footer .credit {
 /* about.html specific */
 
 .about-page {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .about-page .about-hero {
@@ -295,7 +295,8 @@ footer .credit {
 .about-page h1 {
   position: relative;
   top: 2rem;
-  left: 15%;
+  width: 65%;
+  left: 34%;
 }
 
 .about-page p {
