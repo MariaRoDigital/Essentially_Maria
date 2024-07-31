@@ -91,7 +91,7 @@ header .mobile-nav a:active {
   color: #1A6757;
 }
 
-main .pricing-page {
+main .pricing-page, main .about-content {
   position: relative;
   top: 2rem;
   z-index: 1;
@@ -202,7 +202,6 @@ footer .credit {
   top: .6rem;
 }
 
-
 /* pricing.html specific */
 
 .price-grid, .special-price-grid{
@@ -276,4 +275,57 @@ footer .credit {
 
 .pricing-page .special {
   margin-bottom: 2rem;
+}
+
+/* about.html specific */
+
+.about-page {
+  margin: 2rem 0;
+}
+
+.about-page .about-hero {
+  height: 14rem;
+  background-image: url("../images/peace-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position-y: -1.8rem;
+  background-size: cover;
+  background-clip: border-box;
+}
+
+.about-page h1 {
+  position: relative;
+  top: 2rem;
+  left: 15%;
+}
+
+.about-page p {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.about-page .grid {
+  margin: auto;
+  display: grid;
+  max-width: 95%;
+  max-height: 115rem;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 60% 40;
+}
+
+.about-me {
+  grid-column: 1 / 4;
+}
+
+.personality {
+  grid-column: 1 / 4;
+}
+
+.personality p {
+  color: rgb(163, 47, 47);
+}
+
+.personality img {
+  width: 80%;
+  padding: 0;
 }
