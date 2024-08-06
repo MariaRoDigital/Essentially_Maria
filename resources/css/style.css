@@ -69,7 +69,7 @@ header .extra-link {
 header .mobile-nav {
   display: flex;
   align-items: center;
-  font-size: .80rem;
+  font-size: .67rem;
 }
 
 header .mobile-nav ul {
@@ -78,7 +78,7 @@ header .mobile-nav ul {
 }
 
 header .mobile-nav a {
-  margin-left: 1rem;
+  margin-left: .75rem;
 }
 
 header .mobile-nav .cta {
