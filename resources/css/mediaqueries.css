@@ -1,0 +1,144 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  header .mobile-nav a {
+    margin-left: .75rem;
+    font-size: .80rem;
+  }
+
+  .about-page .about-hero {
+    height: 16rem;
+  }
+
+  .about-page h1 {
+    top: 4rem;
+  }
+
+  .portfolio-page h1 {
+    font-size: 2rem;
+  }
+
+  .portfolio-page .hero p {
+    padding: 0 3.5rem;
+  }
+
+  .portfolio-page h2 {
+    padding: 0 3.8rem;
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (min-width: 425px) {
+  .container {
+    max-width: 425px;
+  }
+
+  .portfolio-page .hero p {
+    padding: 0 1.8rem;
+  }
+
+  .about-page .about-hero {
+    height: 18rem;
+  }
+}
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+
+  main .hero img {
+    border-radius: 50%;
+    width: 30%;
+  }
+
+  .portfolio-page .hero {
+    height: 28rem;
+  }
+
+  .about-page .about-hero {
+    height: 28rem;
+    background-position-y: -6rem;
+  }
+
+  .about-page h1 {
+    top: 6rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+
+  header li, header a {
+    display: flex;
+    align-items: center;
+  }
+
+  header .logo {
+    max-width: 4.5rem;
+  }
+
+  .portfolio-page .hero p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 0 8rem;
+  }
+
+  .about-page .about-hero {
+    background-size: 22rem;
+    background-position: 20%;
+  }
+
+  .about-page p {
+    padding: 0 8rem;
+  }
+
+  .about-page grid {
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .about-page .disc-result {
+    grid-column: 1 / 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
