@@ -284,10 +284,6 @@ footer .credit {
 
 /* about.html specific */
 
-.about-page {
-  margin: 1.5rem 0;
-}
-
 .about-page .about-hero {
   height: 14rem;
   background-image: url("../images/peace-removebg-preview.png");
@@ -312,11 +308,8 @@ footer .credit {
 .about-page .grid {
   margin: auto;
   display: grid;
-  max-width: 95%;
-  max-height: 115rem;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 60% 40;
 }
 
 .about-me {
