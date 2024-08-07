@@ -195,8 +195,9 @@ footer p {
 }
 
 footer a {
-  color: blue;
+  color: #6ad6c1;
   font-family: merriweather-regular;
+  text-decoration: underline;
 }
 
 footer .credit {
