@@ -31,6 +31,10 @@ h3 {
   font-size: .625rem;
 }
 
+img {
+  width: 96%;
+}
+
 .bold {
   font-family: merriweatherbold;
 }
