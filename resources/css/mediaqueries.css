@@ -40,7 +40,6 @@
     padding: 0 3.8rem;
     font-size: 1.5rem;
   }
-
 }
 
 @media (min-width: 425px) {
@@ -111,9 +110,20 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .about-page .grid {
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .six-p-result img, .gallup-result img {
+    width:85%;
   }
 }
 
