@@ -305,13 +305,6 @@ footer .credit {
   text-align: left;
 }
 
-.about-page .grid {
-  margin: auto;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-}
-
 .about-me {
   grid-column: 1 / 4;
 }
