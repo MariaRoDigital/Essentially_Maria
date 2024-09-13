@@ -278,7 +278,7 @@ footer .credit {
   top: .6rem;
 }
 
-/* pricing.html */
+/* services page */
 
 #services {
   padding: 3.75rem 0;
@@ -355,7 +355,7 @@ footer .credit {
   padding-right: .2rem;
 }
 
-/* porfolio */
+/* porfolio page */
 
 #portfolio {
   padding-top: 3.75rem;
@@ -375,11 +375,15 @@ footer .credit {
   width: 96%;
 }
 
+.audio-description {
+  text-align: center;
+}
+
 #portfolio :where(hr) {
   border: solid rgba(205, 205, 205, 0.293) .1rem;
 }
 
-/* about.html specific */
+/* about page */
 
 .about-page .about-hero {
   height: 14rem;
