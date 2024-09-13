@@ -1,42 +1,68 @@
-body {
-  font-family: "merriweather-regular";
-  line-height: 1.2rem;
-  text-align: center;
+:root {
+  --teal-pop: #026165;
 }
 
-figcaption::before,
-figcaption::after {
-  content: " -- ";
-  color: #1A6757;
+body {
+  line-height: 1.2rem;
+  text-align: center;
+  font-family: sans-serif;
 }
+
+/* use clamp on all fonts to use less media queries */
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: sans-serif;
 }
 
 h1 {
   font-size: 1.75rem;
-  font-weight: bold;
+  font-family: "merriweather-regular";
 }
 
 h2 {
-  line-height: 1.75rem;
   font-size: 1.25rem;
+  font-family: "merriweather-regular";
+  font-weight: bold;
+  padding-bottom: 2rem;
 }
 
 h3 {
-  font-family: merriweather-italic;
-  font-size: .625rem;
+  padding: 1rem 0;
+}
+
+p {
+  padding: 0.75rem;
 }
 
 img {
   width: 96%;
 }
 
+.button {
+  width: 50%;
+  border: solid .15rem;
+  border-radius: .36rem;
+  padding: .50rem;
+  margin: auto;
+  background-color: black;
+
+  -moz-box-shadow: 0 0 .58rem #777;
+  -webkit-box-shadow: 0 0 .58rem #777;
+  box-shadow: 0 0 1rem #777;
+}
+
 .bold {
-  font-family: merriweatherbold;
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.merri-italic {
+  font-family: "merriweather-italic";
 }
 
 .dotted {
@@ -47,61 +73,94 @@ img {
   width: 60%;
 }
 
+.mobile-nav a,
+.cta {
+  color: white;
+  text-shadow: 0 0 .42rem #777;
+}
+
 section:last-child {
   padding-bottom: 2rem;
 }
 
+.availability {
+  display: none;
+  background-color: red;
+  color: white;
+  width: 30%;
+  font-size: .75rem;
+  padding: .1rem .2rem;
+  border-radius: 4px;
+  position: relative;
+  top: -2.90rem;
+  margin: auto;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
 header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header {
+  height: 4.5rem;
   display: flex;
   justify-content: space-between;
   background-color: black;
-  height: 4.5rem;
   padding: .25rem;
   position: sticky;
   top: 0;
   z-index: 2;
 }
 
-header .logo {
-  max-width: 4rem;
-}
-
-header .extra-link {
+.desktop-nav {
   display: none;
 }
 
-header .mobile-nav {
+.logo {
+  max-width: 4rem;
+}
+
+.extra-link {
+  display: none;
+}
+
+.mobile-nav {
   display: flex;
   align-items: center;
   font-size: .67rem;
 }
 
-header .mobile-nav ul {
+.mobile-nav ul {
   display: flex;
   padding: 0 .60rem;
 }
 
-header .mobile-nav a {
+.mobile-nav a {
   margin-left: .75rem;
 }
 
-header .mobile-nav .cta {
-  border: solid .10rem;
-  border-radius: .14rem;
-  padding: .20rem;
+.mobile-nav a:active {
+  color: var(--teal-pop);
 }
 
-header .mobile-nav a:active {
-  color: #1A6757;
-}
-
-main .pricing-page, main .about-content {
-  position: relative;
-  top: 2rem;
-  z-index: 1;
-}
-
-main .hero {
+.hero {
   background:
     /* top, transparent white, faked with gradient */
     linear-gradient(rgba(255, 255, 255, 86%),
@@ -110,79 +169,91 @@ main .hero {
     url("../images/backgrounds-and-elements/systems-and-organization.png");
   background-size: cover;
   background-position: center;
-  height: 24rem;
-  display: flex;
-  align-items: center;
-  color: #1A6757;
+  height: 34rem;
 }
 
-main .hero figure {
-  padding: 0;
-  margin-bottom: 2.5rem;
-}
-
-main .hero img {
+.hero img {
   border-radius: 50%;
-  width: 40%;
+  width: 38%;
+  padding: 1.75rem 0;
 }
 
-main .hero h1 {
-  padding-bottom: 1rem;
+.hero h1 {
+  color: var(--teal-pop);
+  font-family: "merriweather-regular";
 }
 
-main .hero p {
-  font-size: .8rem;
-  padding: 0 2rem;
+.hero p {
+  font-family: "merriweather-italic";
+  margin: 1rem 0 2rem;
+  color: var(--teal-pop);
+  text-align: justify;
 }
 
-main .web-featured {
-  background-color: #1a67584b;
+section p {
+  text-align: left;
 }
 
-main .da-featured {
-  background-color: #1a675827;
+hr {
+  border: solid rgba(128, 128, 128, 0.293) .1rem;
+  width: 75%;
 }
 
-main .portfolio-page .container:not(.hero) {
-  padding: 2rem 0;
+section {
+  padding: 3rem 0 2rem;
 }
 
-main p {
-  font-family: merriweather-italic;
-  font-size: .75rem;
+.options img {
+  border-radius: 1rem;
 }
 
-figure {
+.option {
+  padding: 1rem 0;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-description::after {
+  content: '\f061';
+  font: var(--fa-font-solid);
+  margin-left: .4rem;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.testimonials h2 {
+  padding: 0 .75rem 3rem;
+}
+
+.testimonials .content {
   padding-bottom: 2rem;
 }
 
-figcaption {
-  font-size: .875rem;
-  padding: 2rem 0 1rem;
+.star {
+  width: 10%;
+  padding-bottom: .50rem;
 }
 
-.web-featured .scroll {
-  width: 75%;
-  height: 13rem;
-  overflow: scroll;
-  margin: 0 auto;
+.client-pic {
+  border-radius: 50% 40%;
+  width: 30%;
 }
 
-.prosof-used,
-.skill,
+.client-name {
+  text-align: center;
+}
+
 footer {
   text-align: left;
   padding: 0 1rem;
 }
 
-.skill {
-  padding-top: .5rem;
-}
-
 footer {
   display: flex;
   flex-direction: column;
-  font-family: merriweather-regular;
   font-size: .75rem;
   background-color: black;
   color: white;
@@ -207,54 +278,71 @@ footer .credit {
   top: .6rem;
 }
 
-/* pricing.html specific */
+/* pricing.html */
 
-.price-grid, .special-price-grid{
-  font-size: .50rem;
-  width: 90%;
+#services {
+  padding: 3.75rem 0;
+}
+
+#services section {
+  padding-top: 1rem;
+}
+
+.price-grid,
+.special-price-grid {
   display: grid;
+  width: 90%;
   gap: 1rem;
   margin: auto;
 }
 
 .price-and-min {
-  margin: 2rem 0;
-}
-
-.special-base, .base-price {
-  font-size: 1rem;
+  margin: 1rem 0;
 }
 
 .req-time {
   margin-top: .2rem;
 }
 
-.regular {
-  margin-bottom: 1.5rem;
-}
-
 .card {
   border: solid lightgray .10rem;
   border-radius: .35rem;
-  border-left-color: #1A6757;
-  border-left-width: .25rem;
+  border-left-color: var(--teal-pop);
+  border-left-width: .5rem;
   text-align: left;
-  padding: 1rem;
+  padding: 1rem .60rem;
 }
 
-.card h2 {
-  margin-bottom: 1.50rem;
+.services p {
+  padding: .4rem 0;
+}
+
+.card .card-extra {
+  font-family: merriweather-italic;
+  margin-bottom: 1.20rem;
+  font-size: .94rem;
+  display: none;
+}
+
+.bullets {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+#services special {
+  text-align: left;
+}
+
+.special .bullets {
+  margin-left: 2rem;
 }
 
 .card li {
-  margin-bottom: .75rem;
+  padding-bottom: .60rem;
 }
 
-.card .service::before {
-  content: "\25C6";
-  color: #1A6757;;
-  font-size: 1rem;
-  margin-right: .25rem;
+.sm-font {
+  font-size: .75rem;
 }
 
 .special .card {
@@ -264,22 +352,31 @@ footer .credit {
 .special .service::before {
   content: "\2605";
   color: orange;
+  padding-right: .2rem;
 }
 
-.card .service {
-  font-size: 1rem;
-  margin-bottom: .25rem;
+/* porfolio */
+
+#portfolio {
+  padding-top: 3.75rem;
+  background-color: var(--teal-pop);
+  color: rgb(242, 242, 242);
 }
 
-.card .card-extra {
-  font-size: .60rem;
-  font-family: merriweather-italic;
-  margin-bottom: 1.50rem;
-  line-height: .8rem;
+#portfolio section {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: .70rem;
+  padding-top: 2rem;
+  margin-top: 1rem;
 }
 
-.pricing-page .special {
-  margin-bottom: 2rem;
+#portfolio :is(img) {
+  width: 96%;
+}
+
+#portfolio :where(hr) {
+  border: solid rgba(205, 205, 205, 0.293) .1rem;
 }
 
 /* about.html specific */
