@@ -1,14 +1,6 @@
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-@media (min-width: 375px) {
-  .container {
-    max-width: 375px;
+@media (min-width: 320px) {
+  body {
+    max-width: 425px;
   }
 
   h1 {
@@ -43,8 +35,8 @@
 }
 
 @media (min-width: 425px) {
-  .container {
-    max-width: 425px;
+  body {
+    max-width: 475px;
   }
 
   .portfolio-page .hero p {
@@ -57,8 +49,8 @@
 }
 
 @media (min-width: 475px) {
-  .container {
-    max-width: 475px;
+  body {
+    max-width: 640px;
   }
 
   main .hero img {
@@ -81,11 +73,12 @@
 }
 
 @media (min-width: 640px) {
-  .container {
-    max-width: 640px;
+  body {
+    max-width: 768px;
   }
 
-  header li, header a {
+  header li,
+  header a {
     display: flex;
     align-items: center;
   }
@@ -111,8 +104,8 @@
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
+  body {
+    max-width: 1024px;
   }
 
   .about-page .grid {
@@ -122,25 +115,20 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .six-p-result img, .gallup-result img {
-    width:85%;
+  .six-p-result img,
+  .gallup-result img {
+    width: 85%;
   }
 }
 
-@media (max-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .container {
+@media (min-width: 1024px) {
+  body {
     max-width: 1280px;
   }
 }
 
-@media (max-width: 1536px) {
-  .container {
+@media (min-width: 1280px) {
+  body {
     max-width: 1536px;
   }
 }
