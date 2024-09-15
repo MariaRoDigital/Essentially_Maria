@@ -1,5 +1,5 @@
 :root {
-  --teal-pop: #026165;
+  --accent: #026165;
 }
 
 body {
@@ -7,8 +7,6 @@ body {
   text-align: center;
   font-family: sans-serif;
 }
-
-/* use clamp on all fonts to use less media queries */
 
 a {
   text-decoration: none;
@@ -36,7 +34,7 @@ p {
   padding: 0.75rem;
 }
 
-img {
+main img {
   width: 96%;
 }
 
@@ -157,10 +155,11 @@ header {
 }
 
 .mobile-nav a:active {
-  color: var(--teal-pop);
+  color: var(--accent);
 }
 
 .hero {
+  padding-top: 1rem;
   background:
     /* top, transparent white, faked with gradient */
     linear-gradient(rgba(255, 255, 255, 86%),
@@ -179,14 +178,13 @@ header {
 }
 
 .hero h1 {
-  color: var(--teal-pop);
-  font-family: "merriweather-regular";
+  color: var(--accent);
 }
 
 .hero p {
   font-family: "merriweather-italic";
   margin: 1rem 0 2rem;
-  color: var(--teal-pop);
+  color: var(--accent);
   text-align: justify;
 }
 
@@ -230,6 +228,14 @@ section {
 
 .testimonials .content {
   padding-bottom: 2rem;
+}
+
+.client-pic {
+  margin: 1rem 0;
+}
+
+.testimonial {
+  margin-top: 1.5rem;
 }
 
 .star {
@@ -280,7 +286,9 @@ footer .credit {
 
 /* services page */
 
-#services {
+#services,
+#portfolio,
+#about {
   padding: 3.75rem 0;
 }
 
@@ -307,7 +315,7 @@ footer .credit {
 .card {
   border: solid lightgray .10rem;
   border-radius: .35rem;
-  border-left-color: var(--teal-pop);
+  border-left-color: var(--accent);
   border-left-width: .5rem;
   text-align: left;
   padding: 1rem .60rem;
@@ -355,12 +363,30 @@ footer .credit {
   padding-right: .2rem;
 }
 
-/* porfolio page */
+/* portfolio page */
 
 #portfolio {
-  padding-top: 3.75rem;
-  background-color: var(--teal-pop);
+  background-color: var(--accent);
   color: rgb(242, 242, 242);
+}
+
+.section-nav {
+  text-decoration: underline;
+  text-align: left;
+  width: 35%;
+  position: relative;
+  left: 2rem;
+  margin-top: 1rem;
+}
+
+/* make into a list styled with disc */
+.section-nav ul li {
+  list-style-type: disc;
+  font-size: .70rem;
+}
+
+.section-nav a {
+  color: white;
 }
 
 #portfolio section {
@@ -385,9 +411,9 @@ footer .credit {
 
 /* about page */
 
-.about-page .about-hero {
+.about-hero {
   height: 14rem;
-  background-image: url("../images/peace-removebg-preview.png");
+  background-image: url("../images/people/laptop-smile.png");
   background-repeat: no-repeat;
   background-position-y: -1.8rem;
   background-size: cover;
@@ -401,18 +427,22 @@ footer .credit {
   left: 34%;
 }
 
+#about section {
+  padding: 1.5rem 0;
+}
+
 .about-page p {
   margin-top: 2rem;
   text-align: left;
 }
 
-.about-me {
+/* .about-me {
   grid-column: 1 / 4;
-}
+} */
 
-.personality {
+/* .personality {
   grid-column: 1 / 4;
-}
+} */
 
 .personality p {
   color: rgb(163, 47, 47);
