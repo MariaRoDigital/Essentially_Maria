@@ -45,11 +45,11 @@ main img {
 }
 
 .button {
-  width: 50%;
+  width: fit-content;
   border: solid .15rem;
   border-radius: .36rem;
-  padding: .50rem;
-  margin: auto;
+  padding: .75rem 1.25rem;
+  margin: 2rem auto;
   background-color: black;
 
   -moz-box-shadow: 0 0 .58rem #777;
@@ -83,7 +83,7 @@ main img {
   text-shadow: 0 0 .42rem #777;
 }
 
-section:last-child {
+section:last-child{
   padding-bottom: 2rem;
 }
 
@@ -194,7 +194,11 @@ hr {
 }
 
 section {
-  padding: 3rem 0 2rem;
+  margin-top: 3rem;
+}
+
+section > *{
+  margin-top: .5rem;
 }
 
 .options img {
@@ -219,19 +223,11 @@ section {
 }
 
 .testimonials h2 {
-  padding: 0 .75rem 3rem;
-}
-
-.testimonials .content {
-  padding-bottom: 2rem;
+  padding-inline: .75rem;
 }
 
 .client-pic {
   margin: 1rem 0;
-}
-
-.testimonial {
-  margin-top: 1.5rem;
 }
 
 .star {
@@ -282,14 +278,9 @@ footer .credit {
 
 /* services page */
 
-#services,
 #portfolio,
 #about {
-  padding: 3.75rem 0;
-}
-
-#services section {
-  padding-top: 1rem;
+  padding: 3.75rem 0 0;
 }
 
 .price-grid,
@@ -361,8 +352,11 @@ footer .credit {
 
 /* portfolio page */
 
-#portfolio {
+body :is(#portfolio) {
   background-color: var(--accent);
+}
+
+#portfolio {
   color: rgb(242, 242, 242);
 }
 
@@ -408,10 +402,9 @@ footer .credit {
 /* about page */
 
 .about-hero {
-  height: 14rem;
+  height: 17rem;
   background-image: url("../images/people/laptop-smile.png");
   background-repeat: no-repeat;
-  background-position-y: -1.8rem;
   background-size: cover;
   background-clip: border-box;
 }
@@ -421,10 +414,6 @@ footer .credit {
   top: 2rem;
   width: 65%;
   left: 34%;
-}
-
-#about section {
-  padding: 1.5rem 0;
 }
 
 .about-page p {
