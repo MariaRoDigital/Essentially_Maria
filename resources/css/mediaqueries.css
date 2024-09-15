@@ -23,21 +23,66 @@
   }
 
   .about-hero {
-    height: 17rem;
+    background-position-y: -1rem;
   }
 }
 
 @media (min-width: 425px) {
   body {
+    max-width: 475px;
+  }
+
+  main :is(.hero, section) {
+    padding-inline: min(2rem, 4rem);
+  }
+
+  #about p {
+    text-align: justify;
+  }
+
+  .section-nav a {
+    font-size: .80rem;
+  }
+
+  .about-hero {
+    height: 19.5rem;
+  }
+}
+
+@media (min-width: 475px) {
+  body {
     max-width: 640px;
   }
 
-  .portfolio-page .hero p {
-    padding: 0 1.8rem;
+  .hero {
+    padding-inline: 2rem;
   }
 
-  .about-page .about-hero {
-    height: 18rem;
+  section h2 {
+    grid-column: 1 / span 2;
+  }
+
+  .testimonial-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    outline: var(--accent) solid 2px;
+    border: var(--accent) solid 2px;
+    border-radius: 2rem;
+    margin-block: 2rem;
+    padding-block: 2rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .button {
+    grid-column: 1 / span 2;
+  }
+
+  .about-page h1 {
+    top: 6rem;
   }
 }
 
@@ -46,33 +91,10 @@
     max-width: 768px;
   }
 
-  main .hero img {
-    border-radius: 50%;
-    width: 30%;
-  }
-
-  .portfolio-page .hero {
-    height: 28rem;
-  }
-
-  .about-page .about-hero {
-    height: 28rem;
-    background-position-y: -6rem;
-  }
-
-  .about-page h1 {
-    top: 6rem;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    max-width: 1024px;
-  }
-
   header {
     height: 6rem;
   }
+
 
   .portfolio-page .hero p {
     font-size: 1rem;
@@ -90,9 +112,9 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   body {
-    max-width: 1280px;
+    max-width: 1024px;
   }
 
   .about-page .grid {
@@ -105,6 +127,12 @@
   .six-p-result img,
   .gallup-result img {
     width: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1280px;
   }
 }
 
