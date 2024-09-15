@@ -77,14 +77,8 @@
     max-width: 768px;
   }
 
-  header li,
-  header a {
-    display: flex;
-    align-items: center;
-  }
-
-  header .logo {
-    max-width: 4.5rem;
+  header {
+    height: 6rem;
   }
 
   .portfolio-page .hero p {

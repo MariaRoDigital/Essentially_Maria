@@ -127,12 +127,12 @@ header {
   z-index: 2;
 }
 
-.desktop-nav {
-  display: none;
+.logo-link {
+  display: flex;
 }
 
-.logo {
-  max-width: 4rem;
+.desktop-nav {
+  display: none;
 }
 
 .desktop-hidden-link {
