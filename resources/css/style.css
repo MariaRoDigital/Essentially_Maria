@@ -6,6 +6,12 @@ body {
   line-height: 1.2rem;
   text-align: center;
   font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
 a {
@@ -92,16 +98,6 @@ section:last-child {
   position: relative;
   top: -2.90rem;
   margin: auto;
-}
-
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
 }
 
 header {
