@@ -36,17 +36,8 @@ h3 {
   padding: 1rem 0;
 }
 
-p {
-  padding: 0.75rem;
-}
-
-main img {
-  width: 96%;
-}
-
 .button {
   width: fit-content;
-  border: solid .15rem;
   border-radius: .36rem;
   padding: .75rem 1.25rem;
   margin: 2rem auto;
@@ -83,7 +74,7 @@ main img {
   text-shadow: 0 0 .42rem #777;
 }
 
-section:last-child{
+section:last-child {
   padding-bottom: 2rem;
 }
 
@@ -155,7 +146,13 @@ header {
 }
 
 .hero {
-  padding-top: 1rem;
+  display: grid;
+  grid-template-areas:
+    "img"
+    "h1"
+    "paragraph"
+    "button";
+  justify-items: center;
   background:
     /* top, transparent white, faked with gradient */
     linear-gradient(rgba(255, 255, 255, 86%),
@@ -164,41 +161,48 @@ header {
     url("../images/backgrounds-and-elements/systems-and-organization.png");
   background-size: cover;
   background-position: center;
-  height: 34rem;
+  height: 32rem;
 }
 
 .hero img {
+  grid-area: img;
   border-radius: 50%;
   width: 38%;
   padding: 1.75rem 0;
 }
 
 .hero h1 {
+  grid-area: h1;
   color: var(--accent);
 }
 
 .hero p {
+  grid-area: paragraph;
   font-family: "merriweather-italic";
-  margin: 1rem 0 2rem;
+  margin: 1rem 1.5rem;
   color: var(--accent);
   text-align: justify;
 }
 
+.hero .button {
+  grid-area: button;
+  width: fit-content
+}
+
+section {
+  width: 92%;
+  margin: 3rem auto 0;
+}
+
 section p {
+  margin-top: 1rem;
   text-align: left;
 }
 
 hr {
   border: solid rgba(128, 128, 128, 0.293) .1rem;
   width: 75%;
-}
-
-section {
-  margin-top: 3rem;
-}
-
-section > *{
-  margin-top: .5rem;
+  margin: 1rem auto 0;
 }
 
 .options img {
@@ -222,12 +226,25 @@ section > *{
   -webkit-font-smoothing: antialiased;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "stars"
+    "client-pic"
+    "client-name"
+    "testimonial";
+  margin-top: 1.5rem;
+}
+
 .testimonials h2 {
+  grid-area: section-title;
   padding-inline: .75rem;
 }
 
-.client-pic {
-  margin: 1rem 0;
+.stars {
+  grid-area: stars;
+  display: flex;
+  justify-content: center;
 }
 
 .star {
@@ -236,12 +253,19 @@ section > *{
 }
 
 .client-pic {
+  grid-area: client-pic;
+  margin: 1rem auto;
   border-radius: 50% 40%;
   width: 30%;
 }
 
 .client-name {
+  grid-area: client-name;
   text-align: center;
+}
+
+.testimonial {
+  grid-area: testimonial;
 }
 
 footer {
