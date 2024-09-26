@@ -73,6 +73,10 @@ h1, h2, .subhead {
   width: 60%;
 }
 
+.hidden {
+  display: none;
+}
+
 .mobile-nav a,
 .cta {
   color: white;
@@ -98,6 +102,19 @@ header {
 
 main {
   grid-area: main;
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+main:not(.home, .about) {
+  padding-top: 3.25rem;
+}
+
+/* centers all images in main content except stars*/
+div img:not(.star),
+hr {
+  margin: auto;
 }
 
 footer {
