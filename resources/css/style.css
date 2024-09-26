@@ -31,13 +31,16 @@ h2 {
   font-weight: bold;
   padding-bottom: 2rem;
   text-align: center;
+  line-height: 1.5;
 }
 
 h3 {
   padding: 1rem 0;
 }
 
-h1, h2, .subhead {
+h1,
+h2,
+.subhead {
   text-align: center;
 }
 
@@ -45,7 +48,7 @@ h1, h2, .subhead {
   width: fit-content;
   border-radius: .36rem;
   padding: .75rem 1.25rem;
-  margin: 2rem auto;
+  margin: 0 auto;
   background-color: black;
 
   -moz-box-shadow: 0 0 .58rem #777;
@@ -209,12 +212,10 @@ header {
 }
 
 section {
+  display: grid;
+  row-gap: 1rem;
   width: 92%;
-  margin: 3rem auto 0;
-}
-
-section p {
-  text-align: left;
+  margin: auto;
 }
 
 section:last-child {
@@ -224,7 +225,11 @@ section:last-child {
 hr {
   border: solid rgba(128, 128, 128, 0.293) .1rem;
   width: 75%;
-  margin: 1rem auto 0;
+}
+
+.options {
+  display: grid;
+  gap: 1rem;
 }
 
 .options img {
@@ -232,7 +237,8 @@ hr {
 }
 
 .option {
-  padding: 1rem 0;
+  display: grid;
+  gap: .5rem;
 }
 
 .card-title {
@@ -290,10 +296,6 @@ hr {
   grid-area: testimonial;
 }
 
-.testimonials .button {
-  grid-area: button;
-}
-
 footer {
   text-align: left;
   padding: 0 1rem;
@@ -327,11 +329,6 @@ footer .credit {
 }
 
 /* services page */
-#services,
-#portfolio,
-#about {
-  padding: 3.75rem 0 0;
-}
 
 .price-grid,
 .special-price-grid {
@@ -374,7 +371,7 @@ footer .credit {
   margin-left: 1rem;
 }
 
-#services special {
+.services special {
   text-align: left;
 }
 
@@ -401,9 +398,9 @@ footer .credit {
 }
 
 /* portfolio page */
-#portfolio {
+.portfolio {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.75rem;
   background-color: var(--accent);
   color: rgb(242, 242, 242);
 }
@@ -414,7 +411,6 @@ footer .credit {
   width: 35%;
   position: relative;
   left: 2rem;
-  margin-top: 2rem;
 }
 
 .section-nav ul li {
@@ -426,15 +422,17 @@ footer .credit {
   color: white;
 }
 
-#portfolio section {
+.portfolio section {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 2rem;
   font-size: .70rem;
+}
+
+.portfolio section p {
   margin-top: 1rem;
 }
 
-#portfolio :is(img) {
+.portfolio :is(img) {
   width: 96%;
 }
 
@@ -442,7 +440,7 @@ footer .credit {
   text-align: center;
 }
 
-#portfolio :where(hr) {
+.portfolio :where(hr) {
   border: solid rgba(205, 205, 205, 0.293) .1rem;
 }
 
@@ -456,21 +454,22 @@ footer .credit {
   background-clip: border-box;
 }
 
-.about-page h1 {
+.about h1 {
   position: relative;
-  top: 2rem;
+  top: 4rem;
   width: 65%;
   left: 34%;
 }
 
-.about-page p {
-  margin-top: 2rem;
+.personality :is(img) {
+  margin-block: 2rem;
   text-align: left;
+  width: 80%;
+  padding: 0;
 }
 
-#about section {
-  display: grid;
-  gap: 2rem;
+.about section {
+  gap: 1rem;
 }
 
 .personality p {
@@ -479,9 +478,4 @@ footer .credit {
 
 .personality-result>* {
   margin: auto;
-}
-
-.personality img {
-  width: 80%;
-  padding: 0;
 }
