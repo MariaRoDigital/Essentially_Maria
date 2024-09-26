@@ -4,7 +4,7 @@
 
 body {
   line-height: 1.2rem;
-  text-align: center;
+  text-align: left;
   font-family: sans-serif;
   display: grid;
   grid-template-columns: 1fr;
@@ -30,10 +30,15 @@ h2 {
   font-family: "merriweather-regular";
   font-weight: bold;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 h3 {
   padding: 1rem 0;
+}
+
+h1, h2, .subhead {
+  text-align: center;
 }
 
 .button {
@@ -72,10 +77,6 @@ h3 {
 .cta {
   color: white;
   text-shadow: 0 0 .42rem #777;
-}
-
-section:last-child {
-  padding-bottom: 2rem;
 }
 
 .availability {
@@ -152,7 +153,9 @@ header {
     "h1"
     "paragraph"
     "button";
+  gap: .5rem;
   justify-items: center;
+  align-items: center;
   background:
     /* top, transparent white, faked with gradient */
     linear-gradient(rgba(255, 255, 255, 86%),
@@ -161,6 +164,7 @@ header {
     url("../images/backgrounds-and-elements/systems-and-organization.png");
   background-size: cover;
   background-position: center;
+  padding-inline: 8%;
   height: 32rem;
 }
 
@@ -168,7 +172,7 @@ header {
   grid-area: img;
   border-radius: 50%;
   width: 38%;
-  padding: 1.75rem 0;
+  padding: 1.5rem 0;
 }
 
 .hero h1 {
@@ -179,14 +183,12 @@ header {
 .hero p {
   grid-area: paragraph;
   font-family: "merriweather-italic";
-  margin: 1rem 1.5rem;
   color: var(--accent);
   text-align: justify;
 }
 
 .hero .button {
   grid-area: button;
-  width: fit-content
 }
 
 section {
@@ -195,8 +197,11 @@ section {
 }
 
 section p {
-  margin-top: 1rem;
   text-align: left;
+}
+
+section:last-child {
+  padding-bottom: 2rem;
 }
 
 hr {
@@ -226,19 +231,20 @@ hr {
   -webkit-font-smoothing: antialiased;
 }
 
+.testimonials h2 {
+  grid-column: all;
+}
+
 .wrapper {
   display: grid;
+  grid-column: all;
   grid-template-areas:
     "stars"
     "client-pic"
     "client-name"
-    "testimonial";
-  margin-top: 1.5rem;
-}
-
-.testimonials h2 {
-  grid-area: section-title;
-  padding-inline: .75rem;
+    "testimonial"
+    "button";
+  gap: 1.5rem;
 }
 
 .stars {
@@ -249,12 +255,11 @@ hr {
 
 .star {
   width: 10%;
-  padding-bottom: .50rem;
 }
 
 .client-pic {
   grid-area: client-pic;
-  margin: 1rem auto;
+  margin: auto;
   border-radius: 50% 40%;
   width: 30%;
 }
@@ -266,6 +271,10 @@ hr {
 
 .testimonial {
   grid-area: testimonial;
+}
+
+.testimonials .button {
+  grid-area: button;
 }
 
 footer {
@@ -301,7 +310,7 @@ footer .credit {
 }
 
 /* services page */
-
+#services,
 #portfolio,
 #about {
   padding: 3.75rem 0 0;
@@ -310,7 +319,7 @@ footer .credit {
 .price-grid,
 .special-price-grid {
   display: grid;
-  width: 90%;
+  width: 96%;
   gap: 1rem;
   margin: auto;
 }
@@ -375,12 +384,10 @@ footer .credit {
 }
 
 /* portfolio page */
-
-body :is(#portfolio) {
-  background-color: var(--accent);
-}
-
 #portfolio {
+  display: grid;
+  gap: 1.25rem;
+  background-color: var(--accent);
   color: rgb(242, 242, 242);
 }
 
@@ -393,7 +400,6 @@ body :is(#portfolio) {
   margin-top: 2rem;
 }
 
-/* make into a list styled with disc */
 .section-nav ul li {
   list-style-type: disc;
   font-size: .70rem;
@@ -406,8 +412,8 @@ body :is(#portfolio) {
 #portfolio section {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 2rem;
   font-size: .70rem;
-  padding-top: 2rem;
   margin-top: 1rem;
 }
 
@@ -445,16 +451,17 @@ body :is(#portfolio) {
   text-align: left;
 }
 
-/* .about-me {
-  grid-column: 1 / 4;
-} */
-
-/* .personality {
-  grid-column: 1 / 4;
-} */
+#about section {
+  display: grid;
+  gap: 2rem;
+}
 
 .personality p {
   color: rgb(163, 47, 47);
+}
+
+.personality-result>* {
+  margin: auto;
 }
 
 .personality img {
