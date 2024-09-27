@@ -54,6 +54,10 @@
     max-width: 640px;
   }
 
+  html {
+    font-size: 18px;
+  }
+  
   .hero {
     padding-inline: 2rem;
   }
