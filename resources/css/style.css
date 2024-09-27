@@ -120,18 +120,13 @@ header {
 main {
   grid-area: main;
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
+  justify-items: center;
   padding-bottom: 2rem;
 }
 
 main:not(.home, .about) {
   padding-top: 3.25rem;
-}
-
-/* centers all images in main content except stars*/
-div img:not(.star),
-hr {
-  margin: auto;
 }
 
 footer {
@@ -228,8 +223,7 @@ header {
 section {
   display: grid;
   row-gap: 1rem;
-  width: 92%;
-  margin: auto;
+  width: 90%;
 }
 
 section:last-child {
@@ -423,7 +417,7 @@ footer .credit {
   text-align: left;
   width: 35%;
   position: relative;
-  left: 2rem;
+  left: -5rem;
 }
 
 .section-nav ul li {
@@ -437,15 +431,10 @@ footer .credit {
 
 .portfolio section {
   display: grid;
-  gap: 2rem;
 }
 
 .portfolio section p {
   margin-top: 1rem;
-}
-
-.portfolio :is(img) {
-  width: 96%;
 }
 
 .audio-description {
@@ -459,6 +448,7 @@ footer .credit {
 /* about page */
 
 .about-hero {
+  min-width: 100%;
   height: 17rem;
   background-image: url("../images/people/laptop-smile.png");
   background-repeat: no-repeat;
