@@ -128,6 +128,11 @@ main {
 main:not(.home, .about) {
   padding-top: 3.25rem;
 }
+/* centers all images in main content except stars or maria*/
+div img:not(.star, .maria),
+hr {
+  margin: auto;
+}
 
 footer {
   grid-area: footer;
@@ -193,7 +198,7 @@ header {
     url("../images/backgrounds-and-elements/systems-and-organization.png");
   background-size: cover;
   background-position: center;
-  padding-inline: 8%;
+  padding: 0 8% 2rem;
   height: 32rem;
 }
 
