@@ -29,7 +29,6 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
   font-family: sans-serif;
 }
 
@@ -253,6 +252,10 @@ hr {
   font-weight: bold;
 }
 
+.card-description {
+  color: #5a5a5a;
+}
+
 .card-description::after {
   content: '\f061';
   font: var(--fa-font-solid);
@@ -472,10 +475,6 @@ footer .credit {
 
 .about section {
   gap: 1rem;
-}
-
-.personality p {
-  color: rgb(163, 47, 47);
 }
 
 .personality-result>* {
