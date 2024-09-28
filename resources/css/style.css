@@ -120,7 +120,7 @@ header {
 main {
   grid-area: main;
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-items: center;
   padding-bottom: 2rem;
 }
@@ -246,7 +246,7 @@ hr {
 
 .option {
   display: grid;
-  gap: .5rem;
+  gap: 1rem;
 }
 
 .card-title {
