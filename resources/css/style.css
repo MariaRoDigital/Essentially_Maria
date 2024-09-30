@@ -93,7 +93,7 @@ h2,
   display: none;
 }
 
-.mobile-nav a,
+nav a,
 .cta {
   color: white;
   text-shadow: 0 0 .42rem #777;
@@ -147,30 +147,26 @@ header {
   display: flex;
 }
 
-.desktop-nav {
+.desktop-only {
   display: none;
 }
 
-.desktop-hidden-link {
-  display: none;
-}
-
-.mobile-nav {
+nav {
   display: flex;
   align-items: center;
   font-size: var(--fluid-a);
 }
 
-.mobile-nav ul {
+nav ul {
   display: flex;
   padding: 0 .60rem;
 }
 
-.mobile-nav a {
+nav li {
   margin-left: .75rem;
 }
 
-.mobile-nav a:active {
+nav a:active {
   color: var(--accent);
 }
 
