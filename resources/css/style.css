@@ -180,7 +180,7 @@ nav a:active {
     url("../images/backgrounds-and-elements/systems-and-organization.png");
   background-size: cover;
   background-position: center;
-  height: 34rem;
+  height: 36rem;
 }
 
 .hero__content {
@@ -190,10 +190,10 @@ nav a:active {
     "h1"
     "paragraph"
     "button";
-  gap: 1.5rem;
+  gap: 2.5rem;
   justify-items: center;
   align-items: center;
-  padding: 0 8% 2rem;
+  padding: 1rem;
 }
 
 .hero img {
