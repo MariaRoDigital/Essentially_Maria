@@ -386,16 +386,15 @@ footer .credit {
   color: rgb(242, 242, 242);
 }
 
-.section-nav {
+:where(.secondary-nav) {
   text-decoration: underline;
-  text-align: left;
-  width: 35%;
   position: relative;
-  left: -5rem;
+  left: -20%;
 }
 
-.section-nav ul li {
-  list-style-type: disc;
+.secondary-nav ul {
+  display: unset;
+  list-style: disc;
   font-size: var(--fluid-a);
 }
 
