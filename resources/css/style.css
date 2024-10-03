@@ -198,7 +198,7 @@ nav a:active {
     "h1"
     "paragraph"
     "button";
-  gap: 2.5rem;
+  row-gap: 2.50rem;
   justify-items: center;
   align-items: center;
   padding: 1rem;
@@ -229,22 +229,13 @@ nav a:active {
 
 section {
   display: grid;
-  row-gap: 1rem;
-  width: 90%;
-}
-
-section:last-child {
-  padding-bottom: 2rem;
-}
-
-hr {
-  border: solid rgba(128, 128, 128, 0.293) .1rem;
-  width: 75%;
+  row-gap: var(--direct-children-gap);
+  column-gap: var(--direct-children-gap);
 }
 
 .options {
   display: grid;
-  gap: 1rem;
+  row-gap: var(--card-text-gap);
 }
 
 .options img {
