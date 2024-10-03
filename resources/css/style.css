@@ -227,24 +227,19 @@ nav a:active {
   grid-area: button;
 }
 
-section {
+.cards {
   display: grid;
   row-gap: var(--direct-children-gap);
   column-gap: var(--direct-children-gap);
 }
 
-.options {
+.card {
   display: grid;
   row-gap: var(--card-text-gap);
 }
 
-.options img {
-  border-radius: 1rem;
-}
-
-.option {
-  display: grid;
-  gap: 1rem;
+.card img {
+  border-radius: .25rem;
 }
 
 .card-title {
@@ -255,22 +250,24 @@ section {
   color: #5a5a5a;
 }
 
-.card-description::after {
-  content: '\f061';
-  font: var(--fa-font-solid);
-  margin-left: .4rem;
-  display: inline-block;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+hr {
+  border: solid rgba(128, 128, 128, 0.293) .1rem;
+  width: 75%;
+}
+
+.testimonials {
+  grid-template-areas:
+    'h2'
+    'cards';
 }
 
 .testimonials h2 {
-  grid-column: all;
+  grid-area: h2;
 }
 
-.wrapper {
+.testimonials .card {
   display: grid;
-  grid-column: all;
+  justify-items: center;
   grid-template-areas:
     "stars"
     "client-pic"
@@ -361,7 +358,6 @@ footer .credit {
   border-radius: .35rem;
   border-left-color: var(--accent);
   border-left-width: .5rem;
-  text-align: left;
   padding: 1rem .60rem;
 }
 
@@ -370,7 +366,7 @@ footer .credit {
   row-gap: var(--card-text-gap);
 }
 
-.card .card-extra {
+.services .card-extra {
   font-family: merriweather-italic;
   margin-bottom: 1.20rem;
   font-size: .94rem;
