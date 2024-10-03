@@ -2,6 +2,10 @@
   body {
     max-width: 375px;
   }
+
+  .about-hero {
+    height: 18rem;
+  }
 }
 
 @media (min-width: 375px) {
@@ -23,16 +27,16 @@
     max-width: 475px;
   }
 
-  #about p {
-    text-align: justify;
-  }
-
   .section-nav a {
     font-size: .80rem;
   }
 
+  #about p {
+    text-align: justify;
+  }
+
   .about-hero {
-    height: 19.5rem;
+    height: 21.5rem;
   }
 }
 
@@ -45,10 +49,8 @@
     font-size: 18px;
   }
 
-  main {
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 5rem;
-    padding-bottom: 5rem;
+  .about-hero {
+    grid-column: span 4;
   }
 
   :is(hr, section, .button, .hero) {
@@ -57,10 +59,6 @@
 
   .hidden {
     display: none;
-  }
-
-  .about-page h1 {
-    top: 6rem;
   }
 }
 
@@ -74,26 +72,44 @@
     padding-inline: .75rem;
   }
 
-  .desktop-only {
-    display: block;
+  main > section {
+    padding-inline: 5%;
   }
 
-  .testimonials {
+  .hero {
+    height: 38rem;
+  }
+
+  .hero__content {
+    padding: 2rem 4rem;
+  }
+
+  .options {
     grid-template-areas:
       'h2 h2 h2 h2'
-      'test1 test1 test2 test2';
+      'option1 option1 option2 option2';
   }
 
-  .testimonials h2 {
+  .options .cards {
+    grid-column: span 4;
+  }
+
+  .options h2 {
     grid-area: h2;
   }
 
-  .esther {
-    grid-area: test1;
+  .option1 {
+    grid-area: option1;
+    grid-column: span 2;
   }
 
-  .marisol {
-    grid-area: test2;
+  .option2 {
+    grid-area: option2;
+    grid-column: span 2;
+  }
+
+  .desktop-only {
+    display: block;
   }
 
   .portfolio-page .hero p {
@@ -107,21 +123,14 @@
     background-position: 20%;
   }
 
-  .about-page p {
-    padding: 0 8rem;
+  .about-hero {
+    background-position-y: -6rem;
   }
 }
 
 @media (min-width: 768px) {
   body {
     max-width: 1024px;
-  }
-
-  .about-page .grid {
-    margin: auto;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .six-p-result img,
