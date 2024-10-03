@@ -279,15 +279,11 @@ hr {
 
 .stars {
   grid-area: stars;
-  display: flex;
-  justify-content: center;
+  font-size: clamp(1.75rem, 2rem, 4rem);
+  color: orange;
 }
 
-.star {
-  width: 10%;
-}
-
-.client-pic {
+.client-pic img {
   grid-area: client-pic;
   margin: auto;
   border-radius: 50% 40%;
