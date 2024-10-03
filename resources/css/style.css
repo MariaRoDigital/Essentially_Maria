@@ -304,11 +304,7 @@ hr {
 }
 
 footer {
-  text-align: left;
-  padding: 0 1rem;
-}
-
-footer {
+  grid-area: footer;
   display: flex;
   flex-direction: column;
   font-size: var(--fluid-smalltext);
@@ -335,19 +331,6 @@ footer .credit {
 }
 
 /* services page */
-
-.price-grid,
-.special-price-grid {
-  display: grid;
-  width: 96%;
-  gap: 1rem;
-  margin: auto;
-}
-
-.price-and-min {
-  margin: 1rem 0;
-}
-
 .req-time {
   margin-top: .2rem;
 }
@@ -376,10 +359,6 @@ footer .credit {
 .bullets {
   list-style-type: disc;
   margin-left: 1rem;
-}
-
-.services special {
-  text-align: left;
 }
 
 .special .bullets {
@@ -426,14 +405,6 @@ footer .credit {
 
 .section-nav a {
   color: white;
-}
-
-.portfolio section {
-  display: grid;
-}
-
-.portfolio section p {
-  margin-top: 1rem;
 }
 
 .audio-description {
