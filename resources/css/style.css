@@ -435,10 +435,6 @@ footer .credit {
   padding: 0;
 }
 
-.about section {
-  gap: 1rem;
-}
-
-.personality-result>* {
-  margin: auto;
+.personality-result {
+  justify-items: center;
 }
