@@ -1,5 +1,7 @@
 :root {
   --accent: #026165;
+  --direct-children-gap: 2.25rem;
+  --card-text-gap: 1.50rem;
 
   /* @link https://utopia.fyi/clamp/calculator?a=320,1536,32—51|26—45|20—39|18—35|17—31|16—27 */
 
@@ -278,7 +280,7 @@ hr {
     "client-name"
     "testimonial"
     "button";
-  gap: 1.5rem;
+  row-gap: var(--card-text-gap);
 }
 
 .stars {
@@ -356,7 +358,8 @@ footer .credit {
   margin-top: .2rem;
 }
 
-.card {
+.services .card {
+  row-gap: var(--card-text-gap);
   border: solid lightgray .10rem;
   border-radius: .35rem;
   border-left-color: var(--accent);
@@ -365,8 +368,9 @@ footer .credit {
   padding: 1rem .60rem;
 }
 
-.services p {
-  padding: .4rem 0;
+.services .card__content {
+  display: grid;
+  row-gap: var(--card-text-gap);
 }
 
 .card .card-extra {
@@ -410,7 +414,6 @@ footer .credit {
 /* portfolio page */
 .portfolio {
   display: grid;
-  gap: 1.75rem;
   background-color: var(--accent);
   color: rgb(242, 242, 242);
 }
