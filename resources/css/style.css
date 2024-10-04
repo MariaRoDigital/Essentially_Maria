@@ -389,8 +389,6 @@ footer .credit {
 
 :where(.secondary-nav) {
   text-decoration: underline;
-  position: relative;
-  left: -20%;
 }
 
 .secondary-nav ul {
