@@ -56,7 +56,8 @@
   border-radius: .36rem;
   padding: .75rem 1.25rem;
   background-color: black;
-  margin: 0 auto 2rem;
+  margin: auto;
+  color: white;
 
   -moz-box-shadow: 0 0 .58rem #777;
   -webkit-box-shadow: 0 0 .58rem #777;
@@ -80,6 +81,7 @@ main {
   display: grid;
   row-gap: var(--direct-children-gap);
   grid-template-columns: 1fr;
+  padding-bottom: 3rem;
 }
 
 main > section {
@@ -328,6 +330,10 @@ footer .credit {
 }
 
 /* services page */
+.services {
+  padding-bottom: 6rem;
+}
+
 .req-time {
   margin-top: .2rem;
 }
@@ -356,10 +362,6 @@ footer .credit {
 .bullets {
   list-style-type: disc;
   margin-left: 1rem;
-}
-
-.special .bullets {
-  margin-left: 2rem;
 }
 
 .card li {
