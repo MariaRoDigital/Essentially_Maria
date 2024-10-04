@@ -27,6 +27,10 @@
     max-width: 475px;
   }
 
+  main > section {
+    padding-inline: 8%;
+  }
+
   .section-nav a {
     font-size: .80rem;
   }
@@ -47,14 +51,6 @@
 
   html {
     font-size: 18px;
-  }
-
-  .about-hero {
-    grid-column: span 4;
-  }
-
-  :is(hr, section, .button, .hero) {
-    grid-column: span 4;
   }
 
   .hidden {
@@ -84,43 +80,8 @@
     padding: 2rem 4rem;
   }
 
-  .options {
-    grid-template-areas:
-      'h2 h2 h2 h2'
-      'option1 option1 option2 option2';
-  }
-
-  .options .cards {
-    grid-column: span 4;
-  }
-
-  .options h2 {
-    grid-area: h2;
-  }
-
-  .option1 {
-    grid-area: option1;
-    grid-column: span 2;
-  }
-
-  .option2 {
-    grid-area: option2;
-    grid-column: span 2;
-  }
-
   .desktop-only {
     display: block;
-  }
-
-  .portfolio-page .hero p {
-    font-size: 1rem;
-    line-height: 1.6rem;
-    padding: 0 8rem;
-  }
-
-  .about-page .about-hero {
-    background-size: 22rem;
-    background-position: 20%;
   }
 
   .about-hero {
