@@ -27,12 +27,12 @@
     max-width: 475px;
   }
 
-  main > section {
-    padding-inline: 8%;
+  main {
+    justify-items: center;
   }
 
-  .section-nav a {
-    font-size: .80rem;
+  main>section {
+    width: 86%;
   }
 
   #about p {
@@ -50,8 +50,9 @@
   }
 
   html {
-    font-size: 18px;
+    font-size: 17px;
   }
+
 
   .hidden {
     display: none;
@@ -68,8 +69,16 @@
     padding-inline: .75rem;
   }
 
-  main > section {
-    padding-inline: 5%;
+  .card {
+    grid-template-rows: subgrid;
+  }
+
+  .options .card {
+    grid-row: span 3;
+  }
+
+  .testimonials .card {
+    grid-row: span 4;
   }
 
   .hero {
@@ -85,6 +94,7 @@
   }
 
   .about-hero {
+    height: 24.5rem;
     background-position-y: -6rem;
   }
 }
@@ -92,11 +102,6 @@
 @media (min-width: 768px) {
   body {
     max-width: 1024px;
-  }
-
-  .six-p-result img,
-  .gallup-result img {
-    width: 85%;
   }
 }
 
