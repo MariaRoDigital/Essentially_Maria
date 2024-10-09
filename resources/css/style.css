@@ -345,7 +345,7 @@ footer .credit {
 .services .card__content {
   display: grid;
   row-gap: var(--card-text-gap);
-  padding: 1rem 1.60rem;
+  padding: 2rem 1.60rem;
 }
 
 .services .card-extra {
@@ -386,6 +386,8 @@ footer .credit {
 
 :where(.secondary-nav) {
   text-decoration: underline;
+  position: relative;
+  left: -5rem;
 }
 
 .secondary-nav ul {
