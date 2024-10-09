@@ -130,8 +130,7 @@ h2,
   text-align: center;
 }
 
-nav a,
-.cta {
+nav a {
   color: white;
   text-shadow: 0 0 .42rem #777;
 }
