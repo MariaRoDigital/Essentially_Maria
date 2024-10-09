@@ -83,8 +83,10 @@ main {
   padding-bottom: 3rem;
 }
 
-main > section {
-width: 96%;
+main>section {
+  width: 96%;
+  display: grid;
+  row-gap: var(--direct-children-gap);
 }
 
 /* offsets the top of the page to push it down below the fixed header */
@@ -118,6 +120,7 @@ h2 {
   font-family: "merriweather-regular";
   text-align: center;
   line-height: 1.5;
+  grid-column: -1 / 1;
 }
 
 h3 {
