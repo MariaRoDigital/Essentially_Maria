@@ -49,10 +49,21 @@
     max-width: 640px;
   }
 
+  :root {
+    --direct-children-gap: 2rem;
+  }
+
   html {
     font-size: 17px;
   }
 
+  h3 {
+    line-height: 1.25;
+  }
+
+  .maria {
+    width: 30%;
+  }
 
   .hidden {
     display: none;
@@ -69,8 +80,20 @@
     padding-inline: .75rem;
   }
 
-  .card {
-    grid-template-rows: subgrid;
+  .hero {
+    height: 40rem;
+  }
+
+  .hero__content {
+    padding: 2rem 4rem;
+  }
+
+  .hero__button {
+    margin-block: 2rem;
+  }
+
+  .desktop-only {
+    display: block;
   }
 
   .options .card {
@@ -103,11 +126,27 @@
   body {
     max-width: 1024px;
   }
+
+  main:not(.home, .about) {
+    padding-top: 5.25rem;
+  }
+
+  .hero {
+    height: 42rem;
+  }
 }
 
 @media (min-width: 1024px) {
   body {
     max-width: 1280px;
+  }
+
+  .services .card__content {
+    padding: 2rem 1rem;
+  }
+
+  .special .card {
+    margin: auto;
   }
 }
 
