@@ -49,7 +49,6 @@
 .card {
   display: grid;
   row-gap: var(--card-text-gap);
-  justify-items: center;
 }
 
 .button {
@@ -57,7 +56,6 @@
   border-radius: .36rem;
   padding: .75rem 1.25rem;
   background-color: black;
-  margin: auto;
   color: white;
 
   -moz-box-shadow: 0 0 .58rem #777;
@@ -97,11 +95,6 @@ main:not(.home, .about) {
 /* makes only the portfolio main and about main have padding bottom of 3rem */
 main:is(.portfolio, .about) {
   padding-bottom: 3rem;
-}
-
-section {
-  display: grid;
-  row-gap: var(--direct-children-gap);
 }
 
 a {
@@ -332,10 +325,6 @@ footer .credit {
 }
 
 /* services page */
-.services {
-  justify-items: center;
-}
-
 .req-time {
   margin-top: .2rem;
 }
@@ -348,7 +337,6 @@ footer .credit {
 }
 
 .services .card__content {
-  width: 100%;
   display: grid;
   row-gap: var(--card-text-gap);
   padding: 1rem 1.60rem;
