@@ -17,8 +17,8 @@
     height: 5rem;
   }
 
-  .about-hero {
-    background-position-y: -1rem;
+  .hero {
+    height: 38rem;
   }
 }
 
@@ -41,6 +41,7 @@
 
   .about-hero {
     height: 21.5rem;
+    background-position-y: -1rem;
   }
 }
 
