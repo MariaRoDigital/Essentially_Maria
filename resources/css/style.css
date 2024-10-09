@@ -196,6 +196,7 @@ nav a:active {
     url("../images/backgrounds-and-elements/systems-and-organization.png");
   background-size: cover;
   background-position: center;
+  width: 100%;
   height: 36rem;
 }
 
