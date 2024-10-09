@@ -54,7 +54,7 @@
 .button {
   width: fit-content;
   border-radius: .36rem;
-  padding: .75rem 1.25rem;
+  padding: .75rem 1.5rem;
   background-color: black;
   color: white;
 
@@ -232,7 +232,7 @@ nav a:active {
   text-align: justify;
 }
 
-.hero .button {
+.hero__button {
   grid-area: button;
 }
 
@@ -270,8 +270,7 @@ hr {
     "stars"
     "client-pic"
     "client-name"
-    "testimonial"
-    "button";
+    "testimonial";
   row-gap: var(--card-text-gap);
 }
 
@@ -295,6 +294,10 @@ hr {
 
 .testimonial {
   grid-area: testimonial;
+}
+
+.main__button {
+  margin-block: 2rem;
 }
 
 footer {
