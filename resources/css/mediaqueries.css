@@ -32,7 +32,7 @@
   }
 
   main>section {
-    width: 86%;
+    width: 88%;
   }
 
   #about p {
@@ -105,16 +105,8 @@
     grid-row: span 4;
   }
 
-  .hero {
-    height: 38rem;
-  }
-
-  .hero__content {
-    padding: 2rem 4rem;
-  }
-
-  .desktop-only {
-    display: block;
+  .portfolio .card {
+    grid-row: span 4;
   }
 
   .about-hero {
