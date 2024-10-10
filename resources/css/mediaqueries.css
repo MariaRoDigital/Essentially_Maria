@@ -51,11 +51,15 @@
   }
 
   :root {
-    --direct-children-gap: 2rem;
+    --direct-children-gap: 3rem;
   }
 
   html {
     font-size: 17px;
+  }
+
+  main:not(.home, .about) {
+    padding-top: 5.25rem;
   }
 
   h3 {
@@ -105,6 +109,19 @@
     grid-row: span 4;
   }
 
+  .service .card {
+    grid-template-rows: 1fr repeat(2, 225px) auto auto;
+  }
+
+  .services .card__content {
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+  }
+
+  .special .card__content {
+    grid-row: span 7;
+  }
+
   .portfolio .card {
     grid-row: span 4;
   }
@@ -120,10 +137,6 @@
     max-width: 1024px;
   }
 
-  main:not(.home, .about) {
-    padding-top: 5.25rem;
-  }
-
   .hero {
     height: 42rem;
   }
@@ -135,7 +148,7 @@
   }
 
   .services .card__content {
-    padding: 2rem 1rem;
+    padding: 2rem .60rem;
   }
 
   .special .card {
