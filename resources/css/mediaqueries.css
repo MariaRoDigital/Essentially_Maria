@@ -62,10 +62,6 @@
     padding-top: 5.25rem;
   }
 
-  h3 {
-    line-height: 1.25;
-  }
-
   .maria {
     width: 30%;
   }
@@ -145,10 +141,6 @@
 @media (min-width: 1024px) {
   body {
     max-width: 1280px;
-  }
-
-  .services .card__content {
-    padding: 2rem .60rem;
   }
 
   .special .card {

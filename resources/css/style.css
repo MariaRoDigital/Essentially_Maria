@@ -126,6 +126,7 @@ h2 {
 
 h3 {
   font-size: var(--fluid-h3);
+  line-height: 1.25;
 }
 
 h1,
@@ -349,10 +350,10 @@ footer .credit {
   padding: 2rem 1.60rem;
 }
 
-.services .card-extra {
+.card-extra {
   font-family: merriweather-italic;
   margin-bottom: 1.20rem;
-  display: none;
+  display: block;
 }
 
 .sm-font {
