@@ -114,6 +114,10 @@
     grid-row: span 5;
   }
 
+  .special .card {
+    margin: auto;
+  }
+
   .special .card__content {
     grid-row: span 7;
   }
