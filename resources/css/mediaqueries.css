@@ -136,6 +136,10 @@
   body {
     max-width: 1024px;
   }
+  
+  :root {
+    --direct-children-gap: 2rem;
+  }
 
   .hero {
     height: 42rem;
@@ -145,6 +149,14 @@
 @media (min-width: 1024px) {
   body {
     max-width: 1280px;
+  }
+
+  .services section {
+    width: 96%;
+  }
+
+  .services .card__content {
+    padding: 2rem 1.10rem;
   }
 
   .special .card {
