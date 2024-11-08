@@ -122,10 +122,6 @@
     grid-row: span 7;
   }
 
-  .portfolio .card {
-    grid-row: span 4;
-  }
-
   .about-hero {
     height: 24.5rem;
     background-position-y: -6rem;
@@ -151,6 +147,10 @@
     max-width: 1280px;
   }
 
+  .maria {
+    width: 20%;
+  }
+  
   .services section {
     width: 96%;
   }
@@ -168,10 +168,18 @@
   body {
     max-width: 1440px;
   }
+
+  .hero {
+    height: 44rem;
+  }
 }
 
 @media (min-width: 1440px) {
   body {
     max-width: 1536px;
+  }
+  
+  .hero {
+    height: 48rem;
   }
 }
