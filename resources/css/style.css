@@ -440,6 +440,10 @@ footer .credit {
 }
 
 /* about page */
+.about section {
+  justify-content: center;
+  justify-items: center;
+}
 
 .about-hero {
   min-width: 100%;
@@ -457,13 +461,14 @@ footer .credit {
   left: 34%;
 }
 
+.personality-result {
+  display: grid;
+  justify-items: center;
+}
+
 .personality :is(img) {
   margin-block: 2rem;
   text-align: left;
   width: 80%;
   padding: 0;
-}
-
-.personality-result {
-  justify-items: center;
 }
