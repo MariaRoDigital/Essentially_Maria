@@ -101,7 +101,15 @@
     grid-row: span 3;
   }
 
+  .testimonials .cards {
+    display: grid;
+    grid-template-rows: 3rem 8rem 3rem 1fr;
+  }
+
   .testimonials .card {
+    display: grid;
+    grid-template-rows: subgrid;
+    justify-items: center;
     grid-row: span 4;
   }
 
@@ -150,6 +158,10 @@
   .maria {
     width: 20%;
   }
+
+  .testimonials .cards {
+    grid-template-rows: 3rem 12rem 3rem 1fr;
+  }
   
   .services section {
     width: 96%;
@@ -171,6 +183,10 @@
 
   .hero {
     height: 44rem;
+  }
+
+  .testimonials .card {
+    align-items: start;
   }
 }
 
