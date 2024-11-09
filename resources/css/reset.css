@@ -68,7 +68,7 @@ p,
 li,
 figcaption {
   text-wrap: pretty;
-  max-width: 48ch;
+  max-width: 68ch;
 }
 
 #root,
