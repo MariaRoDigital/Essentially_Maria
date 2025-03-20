@@ -40,14 +40,36 @@
         <img src="resources/images/people/maria.jpg" alt="" class="maria">
         <div class="availability">limited spots</div>
         <h1 class="bold">Hello, I'm Maria</h1>
-        <p class="subhead">I'm a meticulous, and highly organized Digital Business Ally
-          <br>
-          <br>I help you stay consistent with business and personal life you by helping you organize,
-          strategize, and check off tasks that are a burden on your business growth and necessary in your personal life
-        </p>
+
+        <div class="subhead">
+          <p>I'm a meticulous, and highly organized Digital Business Ally
+          </p>
+
+          <p>
+            I help you stay consistent with business and personal life you by helping you organize,
+            strategize, and check off tasks that are a burden on your business growth and necessary in your personal
+            life
+          </p>
+        </div>
         <!-- add google form to anchor tag -->
 
-        <a href="#" class="hero__button button bold">Work With Me</a>
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+          (function () {
+            var target = document.currentScript;
+            window.addEventListener('load', function () {
+              calendar.schedulingButton.load({
+                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0CRZ1VD-tuSNVCmzBkV_d3xO3SI2NxI5cL5teo-e1MyR_OypmWNVf0OMHP9xQ-_ZRspQ3g9MDD?gv=true',
+                color: '#026165',
+                label: "Book an appointment with me",
+                target,
+              });
+            });
+          })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
 
       </div>
     </div>
@@ -150,7 +172,23 @@
       </div>
     </section>
 
-    <a href="#" class="main__button button bold">Work With Me</a>
+    <!-- Google Calendar Appointment Scheduling begin -->
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+    <script>
+      (function () {
+        var target = document.currentScript;
+        window.addEventListener('load', function () {
+          calendar.schedulingButton.load({
+            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0CRZ1VD-tuSNVCmzBkV_d3xO3SI2NxI5cL5teo-e1MyR_OypmWNVf0OMHP9xQ-_ZRspQ3g9MDD?gv=true',
+            color: '#026165',
+            label: "Book an appointment with me",
+            target,
+          });
+        });
+      })();
+    </script>
+    <!-- end Google Calendar Appointment Scheduling -->
 
   </main>
 
