@@ -85,7 +85,6 @@ main {
   display: grid;
   justify-items: center;
   row-gap: var(--direct-children-gap);
-  padding-bottom: 3rem;
 }
 
 main>section {
@@ -102,6 +101,10 @@ main:not(.home, .about) {
 /* makes only the portfolio main and about main have padding bottom of 3rem */
 main:is(.portfolio, .about) {
   padding-bottom: 3rem;
+}
+
+main, main:is(.portfolio, .about) {
+  padding-bottom: 10rem;
 }
 
 a {
