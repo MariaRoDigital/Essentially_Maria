@@ -103,7 +103,8 @@ main:is(.portfolio, .about) {
   padding-bottom: 3rem;
 }
 
-main, main:is(.portfolio, .about) {
+main,
+main:is(.portfolio, .about) {
   padding-bottom: 10rem;
 }
 
