@@ -475,3 +475,33 @@ footer .credit {
   width: 80%;
   padding: 0;
 }
+
+/* faq page */
+.quest_answers {
+  display: grid;
+  row-gap: 2rem;
+}
+
+/* Alternating colors */
+.quest_answers div:nth-child(odd) {
+  /* black for odd items */
+  background-color: black;
+  color: white;
+}
+
+.quest_answers div:nth-child(even) {
+  /* Light teal for even items */
+  background-color: #02626520;
+  color: black;
+}
+
+.quest_answers div:nth-child(odd),
+.quest_answers div:nth-child(even) {
+  padding: 2rem;
+  border-radius: .75rem;
+}
+
+.quest_answers div {
+  display: grid;
+  row-gap: 2rem;
+}
