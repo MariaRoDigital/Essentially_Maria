@@ -8,4 +8,4 @@ How to Run: Clone this repo and open index.html in your browser, or go scroll up
 
 Screenshot:
 
-![BusinessWebsite](https://github.com/user-attachments/assets/4d40fb36-8a51-4caf-9ca6-71fb56782826)
+![BusinessWebsite2](https://github.com/user-attachments/assets/c040dd11-757c-4456-a21a-9978ffee2632)
